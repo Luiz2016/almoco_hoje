@@ -3,19 +3,20 @@ require 'rails_helper'
 feature 'user creates user' do
   scenario 'successfully' do
 
+#TODO colocar factory girl
 
+user = build(:user)
 
-    user = User.create(name:       Faker::Name.name_with_middle,
-                       email:      Faker::Internet.email,
-                       interest_1: Faker::Lorem.word,
-                       interest_2: Faker::Lorem.word,
-                       interest_3: Faker::Lorem.word,
-                       interest_4: Faker::Lorem.word,
-                       company:    Faker::Lorem.word,
-                       address:    'Paulista',
-                       date:       Faker::Date.backward(7),
-                       time:       Faker::Time.backward(7, :evening)
-                      )
+#    user = User.create(name:       Faker::Name.name_with_middle,
+#                       email:      Faker::Internet.email,
+#                       interest_1: Faker::Lorem.word,
+#                       interest_2: Faker::Lorem.word,
+#                       interest_3: Faker::Lorem.word,
+#                       interest_4: Faker::Lorem.word,
+#                       company:    Faker::Lorem.word,
+#                       date:       Faker::Date.backward(7),
+#                       time:       Faker::Time.backward(7, :evening)
+#                      )
 
     visit root_path
 
