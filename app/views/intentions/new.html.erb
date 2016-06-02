@@ -1,4 +1,4 @@
-<%= simple_form_for @user do |f| %>
+<%= simple_form_for @intention do |f| %>
  <%= f.input :name, label: 'Nome',
              error: 'Desculpe, precisamos saber o seu nome...' %>
  <%= f.input :email, label: 'E-mail',
@@ -7,14 +7,13 @@
              placeholder: 'Vendas B2B, Agritech, Desenvolvimento Profissional, Desenvolvimento de Software em Ruby on Rails',
              hint: 'Separe os seus interesses com uma vírgula para que possamos identificá-los melhor',
              error: 'Coloque seus interesses, para nos ajuda a encontrar um bom almoco para você!'%>
- <%= f.input :company, label: 'Empresa', error: 'Desculpe, esse campo é obrigatório.' %>
+ <%= f.input :company, label: 'Empresa', error: 'Por favor nos diga a sua empresa, se você trabalha por conta, coloque o seu nome' %>
+ <%= f.input :position, label: 'Cargo', error: 'Desculpe, esse campo é obrigatório.' %>
  <%= f.input :address, label: 'Região', collection:['Paulista', 'Berrini',
                                                     'Faria Lima', 'Centro',
                                                     'Pinheiros'],
  error: 'Selecione uma das regiões de almoço!' %>
- <%= f.input :date, label: 'Dia da semana', collection:[0,1,2,3,4,5,6],
+ <%= f.input :date, label: 'Dia da semana', collection:['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo'],
  error: 'Selecione o dia da semana que você está mais disponível!' %>
- <%= f.input :time, label: 'Horário', collection:[0,1,2,3,4,5,6,7,8,9],
- error: 'Selecione o horário que você está mais disponível!' %>
- <%= f.submit 'Quero receber convites!' %>
+  <%= f.submit 'Quero receber convites!' %>
 <% end %>
