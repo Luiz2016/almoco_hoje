@@ -1,22 +1,47 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/leonardoalvares/code/campus/almoco_hoje/app/helpers/application_helper.rb": [
+      "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/leonardoalvares/code/campus/almoco_hoje/app/models/user.rb": [
+      "/Users/campuscode7/almoco_hoje/app/models/user.rb": [
         1,
         null
       ],
-      "/Users/leonardoalvares/code/campus/almoco_hoje/app/controllers/application_controller.rb": [
+      "/Users/campuscode7/almoco_hoje/app/controllers/user_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
         0,
         0,
+        null,
         0,
         0,
-        0
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1464814449
+    "timestamp": 1464830173
   }
 }
