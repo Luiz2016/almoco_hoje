@@ -1,6 +1,7 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< 2362aa9f73d66d84fc93fed3d0d1163f5da03d4e
       "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
         0,
         0,
@@ -52,5 +53,53 @@
       ]
     },
     "timestamp": 1464913477
+=======
+      "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/campuscode7/almoco_hoje/app/models/intention.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/campuscode7/almoco_hoje/app/controllers/intentions_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1464910859
+>>>>>>> Refactory:  Rename table user to intention, and eliminate column time
   }
 }
