@@ -41,6 +41,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'pry-byebug'
   end
 
 group :development do
