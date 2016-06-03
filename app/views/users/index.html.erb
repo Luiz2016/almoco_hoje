@@ -1,12 +1,20 @@
 <section>
-  <h1>Conheça os usuários da sua região</h1>
-  <% @users_with_same_address.each do |user| %>
-    <div style="border: 5px solid red;">
-      <p> <strong> Nome: </strong> <%= user.name %> </p>
-      <p> <strong> Email: </strong> <%= user.email %> </p>
-      <p> <strong> Interesses: </strong> <%= user.interest_1 %> </p>
-      <p> <strong> Empresa: </strong> <%= user.company %> </p>
-      <p> <strong> Região: </strong> <%= user.address %> </p>
-    </div>
+  <h1>Olá <span id='user'> <%= @user.name %></span>,
+  <% if  @users_with_same_address.empty? %>
+    não há usuários na sua região.</h1>
+  <% else %>
+    conheça os usuários da sua região:</h1>
   <% end %>
+
+  <div id='guests-list'>
+    <% @users_with_same_address.each do |user| %>
+      <div style="border: 5px solid red;">
+        <p> <strong> Nome: </strong> <%= user.name %> </p>
+        <p> <strong> Email: </strong> <%= user.email %> </p>
+        <p> <strong> Interesses: </strong> <%= user.interest_1 %> </p>
+        <p> <strong> Empresa: </strong> <%= user.company %> </p>
+        <p> <strong> Região: </strong> <%= user.address %> </p>
+      </div>
+  <% end %>
+  </div>
 </section>

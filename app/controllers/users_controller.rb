@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    @users_with_same_address = User.where(address: params[:address])
+    @user = User.find(params[:id])
+    @users_with_same_address = User.where(address: @user.address).where.not(id: @user)
   end
 end
