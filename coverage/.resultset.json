@@ -52,8 +52,15 @@
       "/Users/leonardoalvares/code/campus/almoco_hoje/app/models/restaurant.rb": [
         1,
         null
+      ],
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/controllers/restaurants_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1464967622
+    "timestamp": 1464981598
   }
 }
