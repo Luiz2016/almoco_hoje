@@ -1,59 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< 2362aa9f73d66d84fc93fed3d0d1163f5da03d4e
-      "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/campuscode7/almoco_hoje/app/controllers/users_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/campuscode7/almoco_hoje/app/models/user.rb": [
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "timestamp": 1464913477
-=======
       "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
         1,
         null
@@ -67,6 +14,10 @@
       "/Users/campuscode7/almoco_hoje/app/controllers/intentions_controller.rb": [
         1,
         1,
+        1,
+        null,
+        null,
+        1,
         2,
         null,
         null,
@@ -99,7 +50,6 @@
         null
       ]
     },
-    "timestamp": 1464910859
->>>>>>> Refactory:  Rename table user to intention, and eliminate column time
+    "timestamp": 1464915063
   }
 }
