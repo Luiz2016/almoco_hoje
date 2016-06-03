@@ -20,6 +20,11 @@ class IntentionsController < ApplicationController
     @intention = Intention.find(params[:id])
   end
 
+  def find_guests
+    @intention = Intention.find(params[:id])
+    @intentions_with_same_address = Intention.where(address: @intention.address).where.not(id: @intention)
+  end
+
   private
 
   def intention_params

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'intentions#new'
   resources :intentions, only: [:index, :new, :create, :show]
+  get 'find_guests/:id' => 'intentions#find_guests', as: :find_guests
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

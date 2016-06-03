@@ -1,26 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
+      "/home/renan/Desktop/almoco_hoje/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/models/intention.rb": [
+      "/home/renan/Desktop/almoco_hoje/app/models/intention.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/controllers/intentions_controller.rb": [
+      "/home/renan/Desktop/almoco_hoje/app/controllers/intentions_controller.rb": [
         1,
         1,
-<<<<<<< HEAD
         1,
         null,
         null,
         1,
-=======
->>>>>>> b7d62da6398c63fd260339321bd2a0369a6ac6d0
         2,
         null,
         null,
@@ -35,6 +32,11 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        3,
+        3,
         null,
         null,
         1,
@@ -45,7 +47,7 @@
         null,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
+      "/home/renan/Desktop/almoco_hoje/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -53,10 +55,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1464915063
-=======
-    "timestamp": 1464910859
->>>>>>> b7d62da6398c63fd260339321bd2a0369a6ac6d0
+    "timestamp": 1464991090
   }
 }
