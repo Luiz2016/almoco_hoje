@@ -1,26 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/campuscode7/almoco_hoje/app/helpers/application_helper.rb": [
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/models/intention.rb": [
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/models/intention.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/controllers/intentions_controller.rb": [
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/controllers/intentions_controller.rb": [
         1,
         1,
-<<<<<<< HEAD
-        1,
+        2,
         null,
         null,
         1,
-=======
->>>>>>> b7d62da6398c63fd260339321bd2a0369a6ac6d0
         2,
         null,
         null,
@@ -45,18 +42,18 @@
         null,
         null
       ],
-      "/Users/campuscode7/almoco_hoje/app/controllers/application_controller.rb": [
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/controllers/application_controller.rb": [
         1,
         null,
         null,
+        1,
+        null
+      ],
+      "/Users/leonardoalvares/code/campus/almoco_hoje/app/models/restaurant.rb": [
         1,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1464915063
-=======
-    "timestamp": 1464910859
->>>>>>> b7d62da6398c63fd260339321bd2a0369a6ac6d0
+    "timestamp": 1464967622
   }
 }

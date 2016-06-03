@@ -2,17 +2,17 @@ require 'rails_helper'
 
 feature 'user creates intention' do
   scenario 'successfully' do
-    intention = FactoryGirl.create(:intention)
+    intention = create(:intention)
 
     visit root_path
 
-    fill_in 'Nome',           with: intention.name
-    fill_in 'E-mail',         with: intention.email
-    fill_in 'Interesses',     with: intention.interests
-    fill_in 'Empresa',        with: intention.company
-    fill_in 'Cargo',          with: intention.position
-    select intention.address, from: 'Região'
-    select intention.date,    from: 'Dia da semana'
+    fill_in 'Nome',            with: intention.name
+    fill_in 'E-mail',          with: intention.email
+    fill_in 'Interesses',      with: intention.interests
+    fill_in 'Empresa',         with: intention.company
+    fill_in 'Cargo',           with: intention.position
+    select intention.location, from: 'Região'
+    select intention.date,     from: 'Dia da semana'
 
     click_on 'Quero receber convites!'
 
@@ -21,7 +21,7 @@ feature 'user creates intention' do
     expect(page).to have_content intention.interests
     expect(page).to have_content intention.company
     expect(page).to have_content intention.position
-    expect(page).to have_content intention.address
+    expect(page).to have_content intention.location
     expect(page).to have_content intention.date
   end
 

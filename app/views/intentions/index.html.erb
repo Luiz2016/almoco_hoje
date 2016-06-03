@@ -1,12 +1,13 @@
 <section>
   <h1>Conheça os usuários da sua região</h1>
-  <% @intentions_with_same_address.each do |intention| %>
+  <% @intentions_with_same_location.each do |intention| %>
     <div style="border: 5px solid red;">
       <p> <strong> Nome: </strong> <%= intention.name %> </p>
       <p> <strong> Email: </strong> <%= intention.email %> </p>
       <p> <strong> Interesses: </strong> <%= intention.interests %> </p>
       <p> <strong> Empresa: </strong> <%= intention.company %> </p>
-      <p> <strong> Região: </strong> <%= intention.address %> </p>
+      <p> <strong> Cargo: </strong> <%= intention.position %> </p>
+      <p> <strong> Região: </strong> <%= intention.location %> </p>
     </div>
   <% end %>
 </section>

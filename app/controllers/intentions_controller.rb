@@ -1,6 +1,6 @@
 class IntentionsController < ApplicationController
   def index
-    @intentions_with_same_address = Intention.where(address: params[:address])
+    @intentions_with_same_location = Intention.where(location: params[:location])
   end
 
   def new
@@ -23,7 +23,7 @@ class IntentionsController < ApplicationController
   private
 
   def intention_params
-    params.require(:intention).permit(:name, :interests, :address, :date,
+    params.require(:intention).permit(:name, :interests, :location, :date,
                                       :email, :company, :position)
   end
 end

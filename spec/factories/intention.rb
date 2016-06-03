@@ -5,7 +5,7 @@ FactoryGirl.define do
     interests  Faker::Lorem.word
     company    Faker::Lorem.word
     position   Faker::Lorem.word
-    address    'Paulista'
+    location   'Paulista'
     date       'Segunda-feira'
   end
 end
