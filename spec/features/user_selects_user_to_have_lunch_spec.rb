@@ -8,7 +8,7 @@ feature 'user selects user to have lunch' do
 
     visit intentions_path(location: intention.location)
 
-  #TODO colocar botão:  click_on 'Quero Almoçar'
+    click_on 'Quero Almoçar'
 
     visit restaurants_path(location: restaurant.location)
 
@@ -17,9 +17,9 @@ feature 'user selects user to have lunch' do
 
     click_on 'Nesse restaurante'
 
-    visit #TODO intenção
+    #visit TODO intenção
 
     expect(page).to have_content "Obrigado, um e-mail foi enviado a #{intention.name} informando a sua intenção"
-  end
 
+  end
 end

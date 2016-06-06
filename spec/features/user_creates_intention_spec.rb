@@ -16,13 +16,8 @@ feature 'user creates intention' do
 
     click_on 'Quero receber convites!'
 
-    expect(page).to have_content intention.name
-    expect(page).to have_content intention.email
-    expect(page).to have_content intention.interests
-    expect(page).to have_content intention.company
-    expect(page).to have_content intention.position
-    expect(page).to have_content intention.location
-    expect(page).to have_content intention.date
+    visit intentions_path(location: intention.location)
+    
   end
 
   scenario 'in blank' do

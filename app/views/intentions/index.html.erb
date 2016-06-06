@@ -1,13 +1,19 @@
 <section>
   <h1>Conheça os usuários da sua região</h1>
   <% @intentions_with_same_location.each do |intention| %>
-    <div style="border: 5px solid red;">
-      <p> <strong> Nome: </strong> <%= intention.name %> </p>
-      <p> <strong> Email: </strong> <%= intention.email %> </p>
-      <p> <strong> Interesses: </strong> <%= intention.interests %> </p>
-      <p> <strong> Empresa: </strong> <%= intention.company %> </p>
-      <p> <strong> Cargo: </strong> <%= intention.position %> </p>
-      <p> <strong> Região: </strong> <%= intention.location %> </p>
+    <div style='border: 5px solid red;'>
+      <div>
+        <p> <strong> Nome: </strong> <%= intention.name %> </p>
+        <p> <strong> Email: </strong> <%= intention.email %> </p>
+        <p> <strong> Interesses: </strong> <%= intention.interests %> </p>
+        <p> <strong> Empresa: </strong> <%= intention.company %> </p>
+        <p> <strong> Cargo: </strong> <%= intention.position %> </p>
+        <p> <strong> Região: </strong> <%= intention.location %> </p>
+      </div>
+      <div>
+        <%= link_to 'Quero Almoçar', restaurants_path %>
+      </div>
     </div>
+
   <% end %>
 </section>

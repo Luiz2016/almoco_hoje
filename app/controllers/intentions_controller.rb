@@ -10,7 +10,7 @@ class IntentionsController < ApplicationController
   def create
     @intention = Intention.create(intention_params)
     if @intention.persisted?
-      redirect_to @intention
+      redirect_to intentions_path
     else
       render :new
     end
