@@ -7,9 +7,7 @@
       <p>Endereço:<strong><%=restaurant.address%></strong></p>
     <div>
     <div>
-
-      <%=#TODO link_to 'Nesse restaurante'
-      %>
+      <%=link_to 'Nesse restaurante', finalize_intention_path(@intention, restaurant_selected: restaurant), method: :post %>
     </div>
   </div>
   <% end %>

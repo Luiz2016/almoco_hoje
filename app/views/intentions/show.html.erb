@@ -1,13 +1,20 @@
-<h1>Obrigado, por se inscrever</h1>
+<section>
+  <h1>Obrigado por se inscrever <%= @intention.name %>, conheça quem você pode
+    chamar para almoçar na <%= @intention.location %> </h1>
 
-<p>Em breve enviaremos um convite para você conhecer alguém incrível!</p>
-
-<p>Enquanto isso, confira os dados da sua inscrição </p>
-
-<p><%= @intention.name %></p>
-<p><%= @intention.email %></p>
-<p><%= @intention.interests %></p>
-<p><%= @intention.company %></p>
-<p><%= @intention.position %></p>
-<p><%= @intention.location %></p>
-<p><%= @intention.date %></p>
+  <% @intentions_with_same_location.each do |intention| %>
+    <div style='border: 5px solid red;'>
+      <div>
+        <p> <strong> Nome: </strong> <%= intention.name %> </p>
+        <p> <strong> Email: </strong> <%= intention.email %> </p>
+        <p> <strong> Interesses: </strong> <%= intention.interests %> </p>
+        <p> <strong> Empresa: </strong> <%= intention.company %> </p>
+        <p> <strong> Cargo: </strong> <%= intention.position %> </p>
+        <p> <strong> Região: </strong> <%= intention.location %> </p>
+      </div>
+      <div>
+        <%= link_to 'Quero Almoçar', restaurants_intention_path(@intention, intention_selected: intention) %>
+      </div>
+    </div>
+  <% end %>
+</section>

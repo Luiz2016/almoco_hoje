@@ -1,7 +1,4 @@
 class IntentionsController < ApplicationController
-  def index
-    @intentions_with_same_location = Intention.where(location: params[:location])
-  end
 
   def new
     @intention = Intention.new
@@ -10,7 +7,7 @@ class IntentionsController < ApplicationController
   def create
     @intention = Intention.create(intention_params)
     if @intention.persisted?
-      redirect_to intentions_path
+      redirect_to @intention
     else
       render :new
     end
@@ -18,6 +15,18 @@ class IntentionsController < ApplicationController
 
   def show
     @intention = Intention.find(params[:id])
+    @intentions_with_same_location = Intention.where(location: @intention.location)
+  end
+
+  def restaurants
+    @intention = Intention.find(params[:id])
+    #@intention_selected = Intention.find(params[:intention_selected])
+    @restaurants_with_same_location = Restaurant.where(location: @intention.location)
+  end
+
+  def finalize
+    @intention = Intention.find(params[:id])
+    restaurant = Restaurant.find(params[:restaurant_selected])
   end
 
   private
