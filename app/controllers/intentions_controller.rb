@@ -21,13 +21,15 @@ class IntentionsController < ApplicationController
   def restaurants
     @intention = Intention.find(params[:id])
     @restaurants_with_same_location = Restaurant.where(location: @intention.location)
+    cookies[:selected_intention] = Intention.find(params[:selected_intention]).id
   end
 
   def create_appointment
     @intention = Intention.find(params[:id])
-    @selected_intention = Intention.find(params[:selected_intention])
-    @selected_restaurant = Restaurant.find(params[:selected_restaurant])
-    Appointment.create(intention: @intention, selected_intention: @selected_intention, selected_restaurant: @selected_restaurant)
+    @restaurant = Restaurant.find(params[:restaurant])
+    @selected_intention = Intention.find(cookies[:selected_intention])
+    @appointment = Appointment.create(intention: @intention, selected_intention: @selected_intention, restaurant: @restaurant)
+    cookies.delete(:selected_intention)
   end
 
   private
