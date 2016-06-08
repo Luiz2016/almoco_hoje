@@ -1,1 +1,3 @@
-<p> Obrigado <%=  @appointment_intention %>, um e-mail foi enviado a <%= @appointment_selected_intention %> informando a sua intenção de almoçar em <%= @appointment_selected_restaurant %> </p>
+<p> Obrigado <%=  @appointment.intention.name %>, um e-mail foi enviado a \
+<%= @appointment.selected_intention.name %> informando a sua intenção de almoçar em\
+<%= @appointment.restaurant.name %> </p>

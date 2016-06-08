@@ -3,8 +3,9 @@ feature 'user selects user to have lunch' do
   scenario 'successfully' do
 
     intention = create(:intention, name: 'Usuário 1')
+
     restaurant = create(:restaurant, location: intention.location)
-    
+
     visit intention_path(intention)
 
     click_on 'Quero Almoçar'
@@ -16,9 +17,9 @@ feature 'user selects user to have lunch' do
 
     click_on 'Nesse restaurante'
 
-    expect(current_path).to eq finalize_intention_path(intention)
+    expect(current_path).to eq create_appointment_intention_path(intention)
 
-    expect(page).to have_content "Obrigado #{}, um e-mail foi enviado a \
-#{} informando a sua intenção de almoçar em #{}"
+    expect(page).to have_content intention.name
+    expect(page).to have_content restaurant.name
   end
 end
