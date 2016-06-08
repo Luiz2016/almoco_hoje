@@ -1,13 +1,13 @@
 <section>
   <h1>Escolha o seu restaurante!</h1>
   <% @restaurants_with_same_location.each do |restaurant| %>
-  <div style="border 5px solid red">
+  <div style="border: 5px solid red">
     <div>
       <p>Nome:<strong><%=restaurant.name%></strong></p>
       <p>Endereço:<strong><%=restaurant.address%></strong></p>
+    </div>
     <div>
-    <div>
-      <%=link_to 'Nesse restaurante', finalize_intention_path(@intention, restaurant_selected: restaurant), method: :post %>
+      <%=link_to 'Nesse restaurante', finalize_intention_path(@intention, selected_restaurant: restaurant), method: :post %>
     </div>
   </div>
   <% end %>

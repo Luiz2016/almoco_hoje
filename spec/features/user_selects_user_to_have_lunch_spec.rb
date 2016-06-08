@@ -1,11 +1,10 @@
 require 'rails_helper'
-
 feature 'user selects user to have lunch' do
   scenario 'successfully' do
 
     intention = create(:intention, name: 'Usuário 1')
     restaurant = create(:restaurant, location: intention.location)
-
+    
     visit intention_path(intention)
 
     click_on 'Quero Almoçar'
@@ -17,8 +16,9 @@ feature 'user selects user to have lunch' do
 
     click_on 'Nesse restaurante'
 
-    expect(page).to have_content "Obrigado, um e-mail foi enviado a \
-#{intention.name} informando a sua intenção"
+    expect(current_path).to eq finalize_intention_path(intention)
 
+    expect(page).to have_content "Obrigado #{}, um e-mail foi enviado a \
+#{} informando a sua intenção de almoçar em #{}"
   end
 end

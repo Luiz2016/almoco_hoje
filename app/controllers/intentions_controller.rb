@@ -20,13 +20,14 @@ class IntentionsController < ApplicationController
 
   def restaurants
     @intention = Intention.find(params[:id])
-    #@intention_selected = Intention.find(params[:intention_selected])
     @restaurants_with_same_location = Restaurant.where(location: @intention.location)
   end
 
-  def finalize
+  def create_appointment
     @intention = Intention.find(params[:id])
-    restaurant = Restaurant.find(params[:restaurant_selected])
+    @selected_intention = Intention.find(params[:selected_intention])
+    @selected_restaurant = Restaurant.find(params[:selected_restaurant])
+    Appointment.create(intention: @intention, selected_intention: @selected_intention, selected_restaurant: @selected_restaurant)
   end
 
   private

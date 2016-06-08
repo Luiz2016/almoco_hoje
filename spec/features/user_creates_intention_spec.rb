@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'user creates intention' do
   scenario 'successfully' do
-    intention = create(:intention)
+    intention = build(:intention)
 
     visit root_path
 
@@ -16,8 +16,10 @@ feature 'user creates intention' do
 
     click_on 'Quero receber convites!'
 
-    visit intentions_path(location: intention.location)
-    
+    expect(current_path).to eq intention_path(Intention.last)
+
+    expect(page).to have_content intention.name
+    expect(page).to have_content intention.location
   end
 
   scenario 'in blank' do

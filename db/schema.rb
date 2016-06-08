@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160603142946) do
+ActiveRecord::Schema.define(version: 20160607234559) do
+
+  create_table "appointments", force: :cascade do |t|
+    t.integer  "intention_id"
+    t.integer  "selected_intention_id"
+    t.integer  "restaurant_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "appointments", ["intention_id"], name: "index_appointments_on_intention_id"
+  add_index "appointments", ["restaurant_id"], name: "index_appointments_on_restaurant_id"
+  add_index "appointments", ["selected_intention_id"], name: "index_appointments_on_selected_intention_id"
 
   create_table "intentions", force: :cascade do |t|
     t.string   "name"
