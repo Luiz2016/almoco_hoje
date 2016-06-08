@@ -28,6 +28,9 @@ class IntentionsController < ApplicationController
     @selected_intention = Intention.find(params[:selected_intention])
     @selected_restaurant = Restaurant.find(params[:selected_restaurant])
     Appointment.create(intention: @intention, selected_intention: @selected_intention, selected_restaurant: @selected_restaurant)
+    @appointment_intention = Appointment.find(params[:id])
+    @appointment_selected_intention = Appointment.find(params[:id])
+    @appointment_selected_restaurant = Appointment.find(params[:id])
   end
 
   private
