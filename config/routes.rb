@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   resources :intentions, only: [:new, :create, :show] do
     member do
       get 'restaurants'
-      post 'create_appointment'
+      post 'appointment'
     end
   end
+  resources :appointments, only: [:show]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
