@@ -1,3 +1,6 @@
+
+<div class="row">
+  <div class="col-md-12">
 <%= simple_form_for @intention do |f| %>
  <%= f.input :name, label: 'Nome',
              error: 'Desculpe, precisamos saber o seu nome...' %>
@@ -15,5 +18,7 @@
  error: 'Selecione uma das regiões de almoço!' %>
  <%= f.input :date, label: 'Dia da semana', collection:['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo'],
  error: 'Selecione o dia da semana que você está mais disponível!' %>
-  <%= f.submit 'Quero receber convites!' %>
+  <%= f.submit 'Quero receber convites!', class: 'btn btn-warning' %>
 <% end %>
+</div>
+</div>
