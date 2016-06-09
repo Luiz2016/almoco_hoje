@@ -17,7 +17,7 @@ feature 'user selects user to have lunch' do
 
     click_on 'Nesse restaurante'
 
-    expect(current_path).to eq create_appointment_intention_path(intention)
+    expect(current_path).to eq appointment_path(Appointment.last)
 
     expect(page).to have_content intention.name
     expect(page).to have_content restaurant.name

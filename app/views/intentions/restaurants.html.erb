@@ -7,7 +7,7 @@
       <p>Endereço:<strong><%=restaurant.address%></strong></p>
     </div>
     <div>
-      <%=link_to 'Nesse restaurante', create_appointment_intention_path(@intention, restaurant: restaurant), method: :post %>
+      <%=link_to 'Nesse restaurante', appointment_intention_path(@intention, restaurant: restaurant), method: :post %>
     </div>
   </div>
   <% end %>

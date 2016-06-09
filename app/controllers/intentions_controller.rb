@@ -24,17 +24,14 @@ class IntentionsController < ApplicationController
     cookies[:selected_intention] = Intention.find(params[:selected_intention]).id
   end
 
-  def create_appointment
+  def appointment
     @intention = Intention.find(params[:id])
     @restaurant = Restaurant.find(params[:restaurant])
     @selected_intention = Intention.find(cookies[:selected_intention])
     @appointment = Appointment.create(intention: @intention, selected_intention: @selected_intention, restaurant: @restaurant)
     cookies.delete(:selected_intention)
-  end
+    redirect_to @appointment
 
-  def find_guests
-    @intention = Intention.find(params[:id])
-    @intentions_with_same_address = Intention.where(address: @intention.address).where.not(id: @intention)
   end
 
   private
