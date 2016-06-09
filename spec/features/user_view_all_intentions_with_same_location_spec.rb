@@ -13,12 +13,14 @@ feature 'user view all intentions with same location' do
     expect(page).to have_content intention1.company
     expect(page).to have_content intention1.position
     expect(page).to have_content intention1.location
+    expect(page).to have_content intention1.date
 
     expect(page).to have_content intention2.name
     expect(page).to have_content intention2.interests
     expect(page).to have_content intention2.company
     expect(page).to have_content intention1.position
     expect(page).to have_content intention2.location
+    expect(page).to have_content intention1.date
 
     expect(page).not_to have_content intention3.name
   end

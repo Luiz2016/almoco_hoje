@@ -10,6 +10,7 @@
         <p> <strong> Empresa: </strong> <%= intention.company %> </p>
         <p> <strong> Cargo: </strong> <%= intention.position %> </p>
         <p> <strong> Região: </strong> <%= intention.location %> </p>
+        <p> <strong> Dia da semana preferido: </strong> <%= intention.date %> </p>
       </div>
       <div>
         <%= link_to 'Quero Almoçar', restaurants_intention_path(@intention, selected_intention: intention), class:'btn btn-warning' %>

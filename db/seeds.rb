@@ -1,50 +1,50 @@
-Intention.create(name:      'Nome1Paulista',
-                 email:     'email@paulista1.com',
+Intention.create(name:      'Osvaldo',
+                 email:     'oswaldo@gmail.com',
                  interests: 'comida, carros, cor azul e Paulista1',
-                 company:   'Empresa Palista 1',
-                 position:  'Diretor na Paulista1',
+                 company:   'Empresa Palista',
+                 position:  'Diretor na Palista',
                  location:  'Paulista',
                  date:      'Segunda-feira')
 
-Intention.create(name:      'Nome2Paulista',
-                 email:     'email@paulista1.com',
-                 interests: 'comida, carros, cor azul e Paulista2',
-                 company:   'Empresa Palista 2',
-                 position:  'Diretor na Paulista2',
+Intention.create(name:      'Carlos',
+                 email:     'carlos@hotmail.com',
+                 interests: 'comida, carros, cor azul e Paulista',
+                 company:   'Empresa Extra',
+                 position:  'Gerente',
                  location:  'Paulista',
                  date:      'Segunda-feira')
 
-Intention.create(name:      'Nome3',
-                 email:     'email@paulista3.com',
-                 interests: 'comida, carros, cor azul e Paulista3',
-                 company:   'Empresa Palista 3',
-                 position:  'Diretor na Paulista3',
-                 location:  'Paulista',
-                 date:      'Segunda-feira')
+Intention.create(name:      'Alberto',
+                 email:     'alberto@gmail.com',
+                 interests: 'comida, carros, cor azul e Centro',
+                 company:   'Empresa Ford',
+                 position:  'Montador',
+                 location:  'Centro',
+                 date:      'Quarta-feira')
 
-Intention.create(name:      'Nome1',
-                 email:     'email@paulista1.com',
-                 interests: 'comida, carros, cor azul e Paulista2',
-                 company:   'Empresa Palista 2',
-                 position:  'Diretor na Paulista2',
-                 location:  'Paulista',
-                 date:      'Segunda-feira')
+Intention.create(name:      'José',
+                 email:     'josé@ig.com',
+                 interests: 'comida, carros, cor azul e Berrini',
+                 company:   'Empresa IG',
+                 position:  'Gerente',
+                 location:  'Berrini',
+                 date:      'Terça-feira')
 
-Intention.create(name:      'Nome1',
-                 email:     'email@paulista1.com',
-                 interests: 'comida, carros, cor azul e Paulista2',
-                 company:   'Empresa Palista 2',
-                 position:  'Diretor na Paulista2',
-                 location:  'Paulista',
-                 date:      'Segunda-feira')
+Intention.create(name:      'Amanda',
+                 email:     'amanda@globo.com',
+                 interests: 'comida, carros, cor azul e Berrini',
+                 company:   'Empresa Editora Globo',
+                 position:  'Gerente',
+                 location:  'Berrini',
+                 date:      'Terça-feira')
 
-Intention.create(name:      'Nome1',
-                 email:     'email@paulista1.com',
-                 interests: 'comida, carros, cor azul e Paulista2',
-                 company:   'Empresa Palista 2',
-                 position:  'Diretor na Paulista2',
-                 location:  'Paulista',
-                 date:      'Segunda-feira')
+Intention.create(name:      'Maria',
+                 email:     'maria@gmail.com',
+                 interests: 'comida, carros, cor azul e Centro',
+                 company:   'Empresa IG',
+                 position:  'Diretora',
+                 location:  'Centro',
+                 date:      'Quarta-feira')
 
 Restaurant.create(name:     Faker::Name.name,
                   email:    Faker::Internet.email,
